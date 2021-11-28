@@ -19,7 +19,7 @@ body {
 h2 {
   color: white;
   margin-top: 90px;
-  margin-left: 90px;
+  margin-left: 150px;
 }
 
 h1 {
@@ -27,6 +27,11 @@ h1 {
   font-size: 60px;
   color: #ff1dfc;
   margin-left: 50px;
+}
+
+h3 {
+  color: grey;
+  margin-left: 150px;
 }
 
 .anime-vanessa {
