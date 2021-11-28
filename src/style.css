@@ -1,6 +1,18 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: "Poiret One", cursive;
-  background-color: black;
+  background: rgb(0, 11, 36);
+  background: linear-gradient(
+    132deg,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(77, 77, 77, 1) 51%
+  );
+  min-height: 100%;
+  margin: 0;
 }
 
 h2 {
