@@ -54,7 +54,12 @@ h3 {
 
 .fa:hover {
   opacity: 0.7;
-  color: white;
+  background: radial-gradient(
+    circle at 0.2% 0.5%,
+    rgb(252, 165, 241) 0%,
+    rgb(181, 255, 255) 100.2%
+  );
+  color: black;
 }
 
 .social-links {
