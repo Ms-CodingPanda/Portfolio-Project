@@ -10,11 +10,11 @@ html {
 
 body {
   font-family: var(--default-font-family);
-  background: rgb(0, 11, 36);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
-    132deg,
-    rgba(0, 0, 0, 1) 51%,
-    rgba(77, 77, 77, 1) 51%
+    146deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(121, 121, 121, 1) 93%
   );
   min-height: 100%;
   margin: 0;
@@ -59,10 +59,11 @@ h3 {
 
 .fa:hover {
   opacity: 0.7;
+  background: rgb(255, 255, 255);
   background: radial-gradient(
-    circle at 0.2% 0.5%,
-    rgb(252, 165, 241) 0%,
-    rgb(181, 255, 255) 100.2%
+    circle,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(255, 29, 252, 1) 100%
   );
   color: black;
 }
