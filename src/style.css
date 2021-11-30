@@ -74,7 +74,7 @@ h3 {
 }
 .project-button {
   margin-top: 180px;
-  text-align: center;
+  margin: 180px auto auto 190px;
 }
 
 .btn-branding {
@@ -118,5 +118,7 @@ h3 {
   }
   .project-button {
     margin-top: 90px;
+    margin-left: auto;
+    text-align: center;
   }
 }
