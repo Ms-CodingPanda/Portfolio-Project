@@ -10,12 +10,7 @@ html {
 
 body {
   font-family: var(--default-font-family);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    146deg,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(121, 121, 121, 1) 93%
-  );
+  background-color: black;
   min-height: 100%;
   margin: 0;
   border: 3px solid #ff1dfc;
@@ -37,6 +32,28 @@ h1 {
 h3 {
   color: grey;
   margin-left: 100px;
+}
+
+i {
+  font-size: 30px;
+  color: var(--branding-color);
+}
+
+.hero {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    146deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(121, 121, 121, 1) 93%
+  );
+}
+
+.skill-list {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  color: white;
 }
 
 .anime-vanessa {
@@ -95,6 +112,69 @@ h3 {
   -webkit-text-stroke: 2px black;
 }
 
+.picture-of-vanessa {
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  background-color: black;
+  background: linear-gradient(none);
+  min-height: auto;
+  margin: auto;
+}
+
+.about-section h1,
+h2,
+h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section h2 {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.about-section h3 {
+  font-size: 25px;
+}
+
+.about-me {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 60px 50px 40px;
+}
+
+.about-me-page-btn {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.about-btn-style {
+  border: 1px solid var(--branding-color);
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  padding: 10px 15px;
+}
+
+.about-btn-style:hover {
+  background-color: #ffb6fe;
+  border: 2px solid var(--branding-color);
+  color: black;
+  font-weight: bo;
+}
+
+.skill-header {
+  text-decoration: underline;
+}
+
 @media (max-width: 990px) {
   h1,
   h2,
@@ -116,5 +196,20 @@ h3 {
     margin-top: 90px;
     margin-left: auto;
     text-align: center;
+  }
+
+  .skill-header {
+    font-size: 20px;
+  }
+  .about-section h1 {
+    font-size: 55px;
+    margin-top: 35px;
+  }
+  .skill-list {
+    text-align: center;
+    margin-left: -40px;
+  }
+  .about-me {
+    font-size: 25px;
   }
 }
