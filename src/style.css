@@ -9,11 +9,30 @@ html {
 }
 
 body {
-  font-family: var(--default-font-family);
   background-color: black;
-  min-height: 100%;
-  margin: 0;
   border: 3px solid #ff1dfc;
+  font-family: var(--default-font-family);
+  margin: 0;
+  min-height: 100%;
+}
+
+h1 {
+  color: var(--branding-color);
+  font-size: 60px;
+  font-weight: 1000;
+  margin-left: 108px;
+}
+
+.content h1 {
+  margin-left: auto;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.about-me-page h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 h2 {
@@ -22,11 +41,18 @@ h2 {
   margin-left: 250px;
 }
 
-h1 {
-  font-weight: 1000;
-  font-size: 60px;
-  color: var(--branding-color);
-  margin-left: 108px;
+.content h2 {
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about-me-page h2 {
+  font-size: 45px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 h3 {
@@ -34,9 +60,42 @@ h3 {
   margin-left: 100px;
 }
 
-i {
+.content h3 {
+  margin-left: auto;
+  text-align: center;
+}
+
+.about-me-page h3 {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact-me-page h3 {
+  color: white;
   font-size: 30px;
+  margin-left: 0;
+  padding: 5px -10px;
+  text-align: center;
+  text-decoration: underline dotted var(--branding-color);
+}
+
+i {
   color: var(--branding-color);
+  font-size: 30px;
+}
+
+.fa {
+  border: 2px solid var(--branding-color);
+  border-radius: 50%;
+  color: var(--branding-color);
+  font-size: 30px;
+  margin: 90px 20px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 55px;
 }
 
 .hero {
@@ -48,41 +107,62 @@ i {
   );
 }
 
-.skill-list {
-  list-style-type: none;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 90px;
-  color: white;
+.about-me-page {
+  background-color: black;
+  margin: auto;
+  min-height: auto;
 }
 
-.anime-vanessa {
-  position: fixed;
+.about-me-content {
+  color: white;
+  font-size: 30px;
+  margin: 60px 50px 40px;
+  text-align: center;
+}
+
+.contact-me-page {
+  text-align: center;
+}
+
+.contact-me-content {
+  color: white;
+  font-size: 30px;
+  margin: 30px 20px;
+}
+
+.skill-header {
+  text-decoration: underline;
+}
+
+.picture-of-app {
+  height: 220px;
+  width: 200px;
+}
+
+.picture-of-vanessa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+}
+
+.picture-of-anime-vanessa {
   bottom: -120px;
+  position: fixed;
   right: -400px;
 }
 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 55px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 90px 20px;
-  color: var(--branding-color);
-  border: 2px solid #ff1dfc;
+.listed-projects {
+  margin-top: 150px;
 }
 
-.fa:hover {
-  opacity: 0.7;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 11%,
-    rgba(255, 29, 252, 1) 100%
-  );
-  color: black;
+.skill-list {
+  color: white;
+  list-style-type: none;
+  margin-bottom: 90px;
+  margin-top: 90px;
+  text-align: center;
 }
 
 .social-links {
@@ -90,73 +170,20 @@ i {
   text-align: center;
 }
 
-.btn-branding {
-  background: black;
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
+.app-link {
   color: var(--branding-color);
-  font-size: 18px;
-  padding: 15px 30px;
-  -webkit-text-stroke: 1.5px var(--branding-color);
-}
-
-.btn-branding:hover {
-  border: 4px solid black;
-  color: black;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 11%,
-    rgba(255, 29, 252, 1) 100%
-  );
-  -webkit-text-stroke: 2px black;
-}
-
-.picture-of-vanessa {
-  display: block;
-  width: 60%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-section {
-  background-color: black;
-  min-height: auto;
-  margin: auto;
-}
-
-.about-section h1 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-section h2 {
-  font-size: 45px;
-  font-weight: 900;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-section h3 {
   font-size: 25px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.about-me {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin: 60px 50px 40px;
+.app-link-logo {
+  color: var(--branding-color);
+  font-size: 20px;
+  text-decoration: none;
 }
-
 .about-me-page-btn {
-  text-align: center;
   margin-bottom: 90px;
+  text-align: center;
 }
 
 .about-btn-style {
@@ -166,91 +193,53 @@ i {
   font-weight: 900;
   padding: 10px 15px;
 }
+.social-btn {
+  color: var(--branding-color);
+  font-size: 40px;
+  margin-top: 60px;
+  text-decoration: none;
+}
+.btn-branding {
+  background: black;
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  color: var(--branding-color);
+  font-size: 18px;
+  padding: 15px 30px;
+  -webkit-text-stroke: 1.5px var(--branding-color);
+}
+.fa:hover {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(255, 29, 252, 1) 100%
+  );
+  color: black;
+  opacity: 0.7;
+}
 
-.about-btn-style:hover {
-  background-color: #ffb6fe;
+.btn-branding:hover {
+  background: #ffb6fe;
   border: 2px solid var(--branding-color);
   color: black;
-  font-weight: bo;
 }
 
-.skill-header {
-  text-decoration: underline;
-}
-
-.content h1 {
-  text-align: center;
-  margin-left: auto;
-  margin-top: 90px;
-}
-
-.content h2 {
-  text-align: center;
-  margin-left: auto;
-  margin-top: 50px;
-}
-
-.content h3 {
-  text-align: center;
-  margin-left: auto;
-}
-
-.listed-projects {
-  margin-top: 150px;
-}
-
-.weather-app {
-  width: 200px;
-  height: 220px;
-}
-
-.app-link {
-  text-align: center;
-  color: var(--branding-color);
-  font-size: 25px;
-}
-
-.app-link-logo {
-  color: var(--branding-color);
-  font-size: 20px;
-  text-decoration: none;
+.social-btn:hover {
+  color: #ffb6fe;
+  font-size: 50px;
 }
 
 .app-link-logo:hover {
   color: #ffb6fe;
 }
-.contact-me-page {
-  text-align: center;
-}
-.contact-me-page h3 {
-  font-size: 30px;
-  color: white;
-  text-decoration: underline dotted var(--branding-color);
-  padding: 5px -10px;
-  text-align: center;
-  margin-left: 0;
-}
-.contact-me-content {
-  color: white;
-  margin: 30px 20px;
-  font-size: 30px;
-}
-.social-btn {
-  font-size: 40px;
-  color: var(--branding-color);
-  margin-top: 60px;
-  text-decoration: none;
-}
-.social-btn:hover {
-  color: #ffb6fe;
-  font-size: 50px;
-}
+
 @media (max-width: 990px) {
   h1,
   h2,
   h3 {
-    text-align: center;
     margin: auto;
+    text-align: center;
   }
   h2 {
     margin: 90px auto auto;
@@ -263,8 +252,8 @@ i {
     max-width: none;
   }
   .project-button {
-    margin-top: 90px;
     margin-left: auto;
+    margin-top: 90px;
     text-align: center;
   }
 
@@ -276,8 +265,8 @@ i {
     margin-top: 35px;
   }
   .skill-list {
-    text-align: center;
     margin-left: -40px;
+    text-align: center;
   }
   .about-me {
     font-size: 25px;
