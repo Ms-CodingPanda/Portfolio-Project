@@ -178,19 +178,19 @@ i {
   text-decoration: underline;
 }
 
-.projects-page h1 {
+.content h1 {
   text-align: center;
   margin-left: auto;
   margin-top: 90px;
 }
 
-.projects-page h2 {
+.content h2 {
   text-align: center;
   margin-left: auto;
   margin-top: 50px;
 }
 
-.projects-page h3 {
+.content h3 {
   text-align: center;
   margin-left: auto;
 }
@@ -219,7 +219,32 @@ i {
 .app-link-logo:hover {
   color: #ffb6fe;
 }
-
+.contact-me-page {
+  text-align: center;
+}
+.contact-me-page h3 {
+  font-size: 30px;
+  color: white;
+  text-decoration: underline dotted var(--branding-color);
+  padding: 5px -10px;
+  text-align: center;
+  margin-left: 0;
+}
+.contact-me-content {
+  color: white;
+  margin: 30px 20px;
+  font-size: 30px;
+}
+.social-btn {
+  font-size: 40px;
+  color: var(--branding-color);
+  margin-top: 60px;
+  text-decoration: none;
+}
+.social-btn:hover {
+  color: #ffb6fe;
+  font-size: 50px;
+}
 @media (max-width: 990px) {
   h1,
   h2,
