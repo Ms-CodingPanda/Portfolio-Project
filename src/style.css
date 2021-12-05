@@ -178,6 +178,48 @@ i {
   text-decoration: underline;
 }
 
+.projects-page h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-top: 90px;
+}
+
+.projects-page h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.projects-page h3 {
+  text-align: center;
+  margin-left: auto;
+}
+
+.listed-projects {
+  margin-top: 150px;
+}
+
+.weather-app {
+  width: 200px;
+  height: 220px;
+}
+
+.app-link {
+  text-align: center;
+  color: var(--branding-color);
+  font-size: 25px;
+}
+
+.app-link-logo {
+  color: var(--branding-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.app-link-logo:hover {
+  color: #ffb6fe;
+}
+
 @media (max-width: 990px) {
   h1,
   h2,
