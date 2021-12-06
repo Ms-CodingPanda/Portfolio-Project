@@ -86,6 +86,30 @@ i {
   font-size: 30px;
 }
 
+nav {
+  background: #fffbff;
+  border: 2px dotted var(--branding-color);
+}
+
+nav ul {
+  margin-bottom: 1px;
+  margin-top: 8px;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+}
+
+nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
 .fa {
   border: 2px solid var(--branding-color);
   border-radius: 50%;
@@ -132,6 +156,12 @@ i {
 
 .skill-header {
   text-decoration: underline;
+}
+
+.logo {
+  margin-left: 8px;
+  max-width: 150px;
+  max-height: 40px;
 }
 
 .picture-of-app {
@@ -208,6 +238,12 @@ i {
   padding: 15px 30px;
   -webkit-text-stroke: 1.5px var(--branding-color);
 }
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 .fa:hover {
   background: rgb(255, 255, 255);
   background: radial-gradient(
