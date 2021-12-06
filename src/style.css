@@ -110,6 +110,14 @@ nav a {
   transition: all 150ms ease-in-out;
 }
 
+footer {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
 .fa {
   border: 2px solid var(--branding-color);
   border-radius: 50%;
@@ -158,6 +166,13 @@ nav a {
   text-decoration: underline;
 }
 
+.credit {
+  color: #fffbff;
+  margin-bottom: 2px;
+  margin-top: 80px;
+  text-align: center;
+}
+
 .logo {
   margin-left: 8px;
   max-width: 150px;
@@ -193,6 +208,13 @@ nav a {
   margin-bottom: 90px;
   margin-top: 90px;
   text-align: center;
+}
+
+.email-link {
+  color: #cc00c9;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .social-links {
@@ -266,7 +288,8 @@ nav li.active a {
   font-size: 50px;
 }
 
-.app-link-logo:hover {
+.app-link-logo,
+.email-link:hover {
   color: #ffb6fe;
 }
 
