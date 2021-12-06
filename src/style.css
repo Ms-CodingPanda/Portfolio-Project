@@ -1,15 +1,21 @@
 :root {
   --branding-color: #ff1dfc;
+  --secondary-branding-color: #ffb6fe;
   --default-font-family: "Poiret One", cursive;
 }
 
 html {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    146deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(121, 121, 121, 1) 93%
+  ) !important;
   height: 100%;
   margin: 0;
 }
 
 body {
-  background-color: black;
   border: 3px solid #ff1dfc;
   font-family: var(--default-font-family);
   margin: 0;
@@ -87,8 +93,10 @@ i {
 }
 
 nav {
-  background: #fffbff;
-  border: 2px dotted var(--branding-color);
+  background: black;
+  margin-left: 20px;
+  margin-right: 25px;
+  margin-top: 5px;
 }
 
 nav ul {
@@ -104,7 +112,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: white;
   font-weight: 900;
   text-decoration: none;
   transition: all 150ms ease-in-out;
@@ -136,7 +144,9 @@ a {
     146deg,
     rgba(0, 0, 0, 1) 40%,
     rgba(121, 121, 121, 1) 93%
-  );
+  ) !important;
+  background-repeat: no-repeat !important;
+  height: max-content;
 }
 
 .about-me-page {
@@ -222,6 +232,10 @@ a {
   text-align: center;
 }
 
+.social-links-footer {
+  text-align: center;
+}
+
 .app-link {
   color: var(--branding-color);
   font-size: 25px;
@@ -261,6 +275,10 @@ a {
   -webkit-text-stroke: 1.5px var(--branding-color);
 }
 
+.project-button {
+  margin: 40px auto;
+}
+
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
@@ -278,19 +296,27 @@ nav li.active a {
 }
 
 .btn-branding:hover {
-  background: #ffb6fe;
+  background: var(--secondary-branding-color);
   border: 2px solid var(--branding-color);
   color: black;
 }
 
 .social-btn:hover {
-  color: #ffb6fe;
+  color: var(--secondary-branding-color);
   font-size: 50px;
+}
+
+.logo:hover {
+  animation: pulse 1s infinite;
 }
 
 .app-link-logo,
 .email-link:hover {
-  color: #ffb6fe;
+  color: var(--secondary-branding-color);
+}
+
+.footer-social:hover {
+  color: var(--secondary-branding-color);
 }
 
 @media (max-width: 990px) {
@@ -307,6 +333,7 @@ nav li.active a {
     font-size: 20px;
     margin-top: 10px;
   }
+
   .social-links {
     max-width: none;
   }
@@ -329,5 +356,17 @@ nav li.active a {
   }
   .about-me {
     font-size: 25px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
