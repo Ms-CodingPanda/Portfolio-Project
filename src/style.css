@@ -315,6 +315,10 @@ nav li.active a {
   transform: scale(1.1);
 }
 
+.app-link-logo:hover {
+  color: var(--secondary-branding-color);
+}
+
 .footer-logo-link:hover {
   animation: pulse 1s infinite;
   color: var(--secondary-branding-color);
