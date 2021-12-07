@@ -30,75 +30,84 @@
     ></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <nav class="d-flex justify-content-between">
-    <a href="/">
-      <img src="images/mcp logo.png" class="logo d-none d-md-block" alt="" />
-      <img
-        src="images/Panda logo-sm.png"
-        class="logo d-block d-md-none"
-        alt=""
-      />
-    </a>
-    <ul>
-      <li class="active">
-        <a href="/"> Home </a>
-      </li>
-      <li><a href="/about.html"> About </a></li>
-      <li><a href="/work.html"> Work </a></li>
-      <li><a href="/contact.html"> Contact </a></li>
-    </ul>
-  </nav>
   <body class="hero">
-    <h2>Hello, I am</h2>
-    <h1>Vanessa Fadase</h1>
-    <h3>Front-end Developer based in Colorado</h3>
+    <div class="profile-landing">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/mcp logo.png"
+            class="panda-logo d-none d-md-block"
+            alt=""
+          />
+          <img
+            src="images/Panda logo-sm.png"
+            class="panda-logo d-block d-md-none"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/"> Home </a>
+          </li>
+          <li><a href="/about.html"> About </a></li>
+          <li><a href="/work.html"> Work </a></li>
+          <li><a href="/contact.html"> Contact </a></li>
+        </ul>
+      </nav>
 
-    <div class="social-links">
-      <a
-        href="https://www.linkedin.com/in/vanessa-fadase/"
-        target="_blank"
-        class="fa fa-linkedin"
-      ></a>
-      <a
-        href="https://github.com/Ms-CodingPanda"
-        target="_blank"
-        class="fa fa-github"
-      ></a>
-      <a
-        href="https://twitter.com/Ms_CodingPanda"
-        target="_blank"
-        class="fa fa-twitter"
-      ></a>
+      <h2>Hello, I am</h2>
+      <h1>Vanessa Fadase</h1>
+      <h3>Front-end Developer based in Colorado</h3>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/vanessa-fadase/"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/Ms-CodingPanda"
+          target="_blank"
+          class="fa fa-github"
+        ></a>
+        <a
+          href="https://twitter.com/Ms_CodingPanda"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+      </div>
+      <div class="project-button mt-5 ml-5">
+        <a class="btn btn-branding mt-5 ml-5" href="/work.html" role="button">
+          Check out my Projects!</a
+        >
+      </div>
+      <div class="d-none d-lg-block">
+        <img
+          src="images/anime-me.png"
+          class="img-fluid picture-of-anime-vanessa"
+        />
+      </div>
     </div>
-    <div class="project-button">
-      <a class="btn btn-branding" href="/work.html" role="button">
-        Check out my Projects!</a
-      >
-    </div>
-    <div class="d-none d-lg-block">
-      <img
-        src="images/anime-me.png"
-        class="img-fluid picture-of-anime-vanessa"
-      />
-    </div>
-    <div>
-      <footer>
-        <p class="credit">
-          Built and designed with 🤍 by <span class="name">Vanessa Fadase</span>
+    <footer>
+      <div class="footer-content">
+        <p class="footer-content-section">
+          Built and designed with 🤍 by <em>Vanessa Fadase</em>
         </p>
         <a href="mailto:fadase.vanessa@gmail.com" class="email-link"
           >fadase.vanessa@gmail.com</a
         >
-        <div class="social-links-footer">
-          <a href="https://github.com/Ms-CodingPanda" target="_blank">
-            <i class="fab fa-github-square footer-social"></i> </a
-          ><a href="https://www.instagram.com/ms_codingpanda/" target="_blank">
-            <i class="fab fa-instagram-square footer-social"></i> </a
-          ><a href="https://twitter.com/Ms_CodingPanda">
-            <i class="fab fa-twitter-square footer-social"></i>
-          </a>
-        </div>
-      </footer>
-    </div>
+      </div>
+      <div class="footer-links d-flex justify-content-center">
+        <a href="https://www.instagram.com/ms_codingpanda/" target="_blank">
+          <i class="fab fa-instagram-square footer-logo-link"></i>
+        </a>
+        <a href="https://github.com/Ms-CodingPanda" target="_blank"
+          ><i class="fab fa-github-square footer-logo-link"></i
+        ></a>
+        <a href="https://twitter.com/Ms_CodingPanda" target="_blank"
+          ><i class="fab fa-twitter-square footer-logo-link"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
