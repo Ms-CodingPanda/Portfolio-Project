@@ -137,6 +137,7 @@ footer {
   margin: 90px 20px;
   padding: 10px;
   text-align: center;
+  transition: all 0.2s ease-in-out;
   width: 55px;
 }
 
@@ -155,7 +156,8 @@ footer {
   min-height: auto;
 }
 
-.about-me-content {
+.about-me-content,
+.more-projects {
   color: white;
   font-size: 30px;
   margin: 60px 50px 40px;
@@ -288,25 +290,29 @@ nav li.active a {
 }
 
 .fa:hover {
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 11%,
-    rgba(255, 29, 252, 1) 100%
-  );
+  background: var(--secondary-branding-color);
   color: black;
-  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.about-me-page-btn:hover {
+  animation: pulse 1s infinite;
+}
+
+.about-btn-style:hover {
+  color: var(--secondary-branding-color);
+  font-weight: bolder;
 }
 
 .btn-branding:hover {
+  animation: pulse 1s infinite;
   background: var(--secondary-branding-color);
-  border: 2px solid var(--branding-color);
   color: black;
 }
 
 .social-btn:hover {
   color: var(--secondary-branding-color);
-  font-size: 50px;
+  transform: scale(1.1);
 }
 
 .footer-logo-link:hover {

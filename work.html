@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanessa Fadases Portfolio</title>
+    <meta
+      name="description"
+      content="Here are some projects Vanessa has done at SheCodes and on her own time for fun! -Vanessa is a front-end developer based in Colorado professionally taught by SheCodes and received her certificates for front-end development. Designing is her passion and she enjoys creating websites, apps and games while being able to use her creativity to create a fun user experience."
+    />
+    <title>Vanessas work - Vanessa Fadase</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +39,31 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <nav class="d-flex justify-content-between">
+      <a href="/" title="Home">
+        <img
+          src="images/mcp logo.png"
+          class="panda-logo d-none d-md-block"
+          alt="Ms_CodingPanda Logo"
+        />
+        <img
+          src="images/Panda logo-sm.png"
+          class="panda-logo d-block d-md-none"
+          alt="Ms_CodingPanda Logo"
+        />
+      </a>
+      <ul>
+        <li>
+          <a href="/" title="Homepage"> Home </a>
+        </li>
+        <li><a href="/about.html" title="About Vanessa"> About </a></li>
+        <li class="active">
+          <a href="/work.html" title="Vanessas projects"> Work </a>
+        </li>
+        <li><a href="/contact.html" title="Contact Vanessa"> Contact </a></li>
+      </ul>
+    </nav>
+
     <div class="project-container container">
       <div class="content">
         <h1><u>Projects</u></h1>
@@ -66,6 +95,7 @@
                 class="fab fa-github-alt app-link-logo"
                 href="https://github.com/Ms-CodingPanda/Weather-app"
                 target="_blank"
+                title="Github"
               ></a>
             </div>
             <p class="text-center text-muted">
@@ -91,6 +121,7 @@
                 class="fab fa-github-alt app-link-logo"
                 href="https://github.com/Ms-CodingPanda/Simple-Weather-app"
                 target="_blank"
+                title="Github"
               ></a>
             </div>
             <p class="text-center text-muted">
@@ -98,8 +129,29 @@
             </p>
           </div>
         </div>
-        <p>And many more to come!</p>
+        <p class="more-projects">And many more to come!</p>
       </div>
     </div>
+    <footer>
+      <div class="footer-content">
+        <p class="footer-content-section">
+          Built and designed with 🤍 by <em>Vanessa Fadase</em>
+        </p>
+        <a href="mailto:fadase.vanessa@gmail.com" class="email-link"
+          >fadase.vanessa@gmail.com</a
+        >
+      </div>
+      <div class="footer-links d-flex justify-content-center">
+        <a href="https://www.instagram.com/ms_codingpanda/" target="_blank">
+          <i class="fab fa-instagram-square footer-logo-link"></i>
+        </a>
+        <a href="https://github.com/Ms-CodingPanda" target="_blank"
+          ><i class="fab fa-github-square footer-logo-link"></i
+        ></a>
+        <a href="https://twitter.com/Ms_CodingPanda" target="_blank"
+          ><i class="fab fa-twitter-square footer-logo-link"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
