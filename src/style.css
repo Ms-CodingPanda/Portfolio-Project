@@ -252,6 +252,10 @@ footer {
   margin: 10px 10px 20px;
 }
 
+.open-source-link {
+  color: var(--branding-color);
+}
+
 .about-me-page-btn {
   margin-bottom: 90px;
   text-align: center;
@@ -327,6 +331,29 @@ nav li.active a {
 
 .email-link:hover {
   color: var(--secondary-branding-color);
+}
+
+.open-source-link:hover {
+  color: var(--secondary-branding-color);
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ffb6fe,
+      0 0 80px #ffb6fe, 0 0 90px #ffb6fe, 0 0 100px #ffb6fe, 0 0 150px #ffb6fe;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 .panda-logo:hover {
